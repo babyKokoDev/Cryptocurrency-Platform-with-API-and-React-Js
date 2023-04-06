@@ -3,6 +3,9 @@ import axios from 'axios'
 import './App.css';
 import Coins from './Components/Coins';
 import Navbar from './Components/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import CoinRoute from './routes/CoinRoute';
+
 
 function App() {
 
@@ -22,7 +25,13 @@ function App() {
   return (
       <>
        <Navbar />
-       <Coins coins={coins}/>
+       <Routes>
+        <Route path='/' element={<Coins coins={coins}/>} />
+        <Route path = '/CoinRoute' element={<CoinRoute />}>
+        <Route path=':coinId' element={<CoinRoute />} />
+        </Route>
+       </Routes>
+       
       </>
   );
 }
