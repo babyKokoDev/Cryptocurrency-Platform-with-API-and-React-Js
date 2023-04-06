@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,11 +9,13 @@
 body {
   background-color: #26272b;
   color: #f4f4f4;
+  font-family: 'Macondo', cursive;
+  font-weight: 600;
 }
 
 a{
   color: #f4f4f4;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 h1{

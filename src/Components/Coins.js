@@ -9,8 +9,8 @@ const Coins = (props) => {
     <div className='container'>
         <div>
             <div className="heading">
-                <p>#</p>
-                <p className='coin-name'>Coin</p>
+                <div>#</div>
+                <div className='coin-name'>Coin</div>
                 <p>Price</p>
                 <p>24h</p>
                 <p className='hide-mobile'>Volume</p>
